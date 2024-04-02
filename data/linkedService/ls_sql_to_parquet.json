@@ -1,0 +1,16 @@
+{
+	"name": "ls_sql_to_parquet",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://sadevsiadlsecom.dfs.core.windows.net/",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJkYzI2M2VjOS1kY2E4LTQyZjctYmI2ZC01ZmI5MjhjZGZkYmYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "shir-ecom-project",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
