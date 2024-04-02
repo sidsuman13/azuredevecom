@@ -1,0 +1,24 @@
+{
+	"name": "evnt_adls_csv_to_parquet",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_adls_to_parquet",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/payment/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/1ec9c481-15a2-4b3b-8950-02c572ea27b3/resourceGroups/rg_devecom/providers/Microsoft.Storage/storageAccounts/sadevrawadlsecom",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
