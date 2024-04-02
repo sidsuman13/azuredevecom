@@ -1,0 +1,16 @@
+{
+	"name": "ls_sql_server",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=DESKTOP-ROM1E7V\\SQLEXPRESS;initial catalog=salesecom;user id=sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI3MzNmZWM0Zi1jNGIyLTRhYTctYTkyOC0yYTdkMDgzY2FjM2YiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "shir-ecom-project",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
