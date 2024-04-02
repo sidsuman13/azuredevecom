@@ -1,0 +1,19 @@
+{
+	"name": "ds_sql_to_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_to_parquet",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "order"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
